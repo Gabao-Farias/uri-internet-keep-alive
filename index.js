@@ -12,6 +12,7 @@ import {
   theuselessweb,
   papertoilet
 } from './fetches.js';
+import { gitPull } from './github.js';
 
 const fetchData = async () => {
     console.log(`\n\nStarted fetching data at: ${new Date()}\n`);
@@ -31,10 +32,15 @@ const fetchData = async () => {
     console.log(`\n\nEnded fetching data at: ${new Date()}\n`);
 };
 
-fetchData();
+const keepAlive = async () => {
+  await fetchData();
+  gitPull();
+};
+
+keepAlive();
 
 var job = new CronJob('0,30 * * * * *', async () => {
-  await fetchData();
+  await keepAlive();
 });
 
 job.start();
