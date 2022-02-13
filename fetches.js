@@ -118,3 +118,54 @@ export const coinmarketcap = async () => {
     console.log(error);
   }
 };
+
+export const downdetector = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://downdetector.com.br/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`downdetector: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("downdetector: FAILURE");
+    console.log(error);
+  }
+};
+
+export const shouldideploytoday = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://shouldideploy.today/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`shouldideploytoday: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("shouldideploytoday: FAILURE");
+    console.log(error);
+  }
+};
+
+export const theuselessweb = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://theuselessweb.com/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`theuselessweb: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("theuselessweb: FAILURE");
+    console.log(error);
+  }
+};

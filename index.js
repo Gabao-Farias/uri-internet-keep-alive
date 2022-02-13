@@ -6,7 +6,10 @@ import {
   youtube,
   githubStatus,
   giphy,
-  coinmarketcap
+  coinmarketcap,
+  downdetector,
+  shouldideploytoday,
+  theuselessweb
 } from './fetches.js';
 
 const fetchData = async () => {
@@ -19,6 +22,9 @@ const fetchData = async () => {
     await githubStatus();
     await giphy();
     await coinmarketcap();
+    await downdetector();
+    await shouldideploytoday();
+    await theuselessweb();
 
     console.log(`\n\nEnded fetching data at: ${new Date()}\n`);
 };
