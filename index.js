@@ -18,7 +18,7 @@ import { gitPull } from './github.js';
 const fetchData = async () => {
     console.log(`\n\nStarted fetching data at: ${new Date()}\n`);
 
-    await google();
+    // await google();
     await amazon();
     await aliExpress();
     await youtube();
