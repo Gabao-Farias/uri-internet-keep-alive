@@ -9,7 +9,8 @@ import {
   coinmarketcap,
   downdetector,
   shouldideploytoday,
-  theuselessweb
+  theuselessweb,
+  papertoilet
 } from './fetches.js';
 
 const fetchData = async () => {
@@ -25,6 +26,7 @@ const fetchData = async () => {
     await downdetector();
     await shouldideploytoday();
     await theuselessweb();
+    await papertoilet();
 
     console.log(`\n\nEnded fetching data at: ${new Date()}\n`);
 };

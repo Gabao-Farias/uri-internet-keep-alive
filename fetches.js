@@ -169,3 +169,20 @@ export const theuselessweb = async () => {
     console.log(error);
   }
 };
+
+export const papertoilet = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('http://papertoilet.com/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`papertoilet: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("papertoilet: FAILURE");
+    console.log(error);
+  }
+};
