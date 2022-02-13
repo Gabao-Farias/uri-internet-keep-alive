@@ -5,10 +5,13 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "cron": "^1.8.2",
     "node-fetch": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
