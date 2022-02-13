@@ -10,7 +10,8 @@ import {
   downdetector,
   shouldideploytoday,
   theuselessweb,
-  papertoilet
+  papertoilet,
+  stackoverflow
 } from './fetches.js';
 import { gitPull } from './github.js';
 
@@ -28,6 +29,7 @@ const fetchData = async () => {
     await shouldideploytoday();
     await theuselessweb();
     await papertoilet();
+    await stackoverflow();
 
     console.log(`\n\nEnded fetching data at: ${new Date()}\n`);
 };

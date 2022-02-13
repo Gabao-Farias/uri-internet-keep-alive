@@ -186,3 +186,20 @@ export const papertoilet = async () => {
     console.log(error);
   }
 };
+
+export const stackoverflow = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://stackoverflow.com/questions/44647778/how-to-run-shell-script-file-using-nodejs');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`stackoverflow: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("stackoverflow: FAILURE");
+    console.log(error);
+  }
+};
