@@ -1,21 +1,20 @@
-import fetch from 'node-fetch';
 import { CronJob } from 'cron';
+import { google, aliExpress, amazon, youtube } from './fetches.js';
 
 const fetchData = async () => {
-  try {
-    const response = await fetch('https://www.google.com/search?q=potatoes&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiyhumpovr1AhVCIbkGHTCbCpYQ_AUoAnoECAIQBA&biw=1366&bih=634&dpr=1');
+    console.log(`\n\nStarted fetching data at: ${new Date()}\n`);
 
-    console.log(`Fetched data at: ${new Date()}`); 
-  } catch (error) {
-    console.log(error);
+    await google();
+    await amazon();
+    await aliExpress();
+    await youtube();
 
-    console.log(`Error fetching data at: ${new Date()}`);
-  }
+    console.log(`\n\nEnded fetching data at: ${new Date()}\n`);
 };
 
 fetchData();
 
-var job = new CronJob('0,15,30,45 * * * * *', async () => {
+var job = new CronJob('0,30 * * * * *', async () => {
   await fetchData();
 });
 
