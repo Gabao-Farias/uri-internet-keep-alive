@@ -67,3 +67,54 @@ export const youtube = async () => {
     console.log(error);
   }
 };
+
+export const githubStatus = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://www.githubstatus.com/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`githubStatus: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("githubStatus: FAILURE");
+    console.log(error);
+  }
+};
+
+export const giphy = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://giphy.com/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`giphy: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("giphy: FAILURE");
+    console.log(error);
+  }
+};
+
+export const coinmarketcap = async () => {
+  try {
+    const startFetchingTime = new Date();
+    
+    await fetch('https://coinmarketcap.com/');
+
+    const finishedFetchTime = new Date ();
+
+    const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
+
+    console.log(`coinmarketcap: OK - ${fetchTimeElapsed}ms`);
+  } catch (error) {
+    console.log("coinmarketcap: FAILURE");
+    console.log(error);
+  }
+};
