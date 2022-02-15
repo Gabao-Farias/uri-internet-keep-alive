@@ -13,7 +13,6 @@ export const google = async () => {
     console.log(`google: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("google: FAILURE");
-    console.log(error);
   }
 };
 
@@ -30,7 +29,6 @@ export const amazon = async () => {
     console.log(`amazon: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("amazon: FAILURE");
-    console.log(error);
   }
 };
 
@@ -47,7 +45,6 @@ export const aliExpress = async () => {
     console.log(`aliExpress: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("aliExpress: FAILURE");
-    console.log(error);
   }
 };
 
@@ -64,7 +61,6 @@ export const youtube = async () => {
     console.log(`youtube: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("youtube: FAILURE");
-    console.log(error);
   }
 };
 
@@ -81,7 +77,6 @@ export const githubStatus = async () => {
     console.log(`githubStatus: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("githubStatus: FAILURE");
-    console.log(error);
   }
 };
 
@@ -98,7 +93,6 @@ export const giphy = async () => {
     console.log(`giphy: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("giphy: FAILURE");
-    console.log(error);
   }
 };
 
@@ -115,7 +109,6 @@ export const coinmarketcap = async () => {
     console.log(`coinmarketcap: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("coinmarketcap: FAILURE");
-    console.log(error);
   }
 };
 
@@ -132,7 +125,6 @@ export const downdetector = async () => {
     console.log(`downdetector: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("downdetector: FAILURE");
-    console.log(error);
   }
 };
 
@@ -149,7 +141,6 @@ export const shouldideploytoday = async () => {
     console.log(`shouldideploytoday: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("shouldideploytoday: FAILURE");
-    console.log(error);
   }
 };
 
@@ -166,7 +157,6 @@ export const theuselessweb = async () => {
     console.log(`theuselessweb: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("theuselessweb: FAILURE");
-    console.log(error);
   }
 };
 
@@ -183,7 +173,6 @@ export const papertoilet = async () => {
     console.log(`papertoilet: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("papertoilet: FAILURE");
-    console.log(error);
   }
 };
 
@@ -200,6 +189,5 @@ export const stackoverflow = async () => {
     console.log(`stackoverflow: OK - ${fetchTimeElapsed}ms`);
   } catch (error) {
     console.log("stackoverflow: FAILURE");
-    console.log(error);
   }
 };
