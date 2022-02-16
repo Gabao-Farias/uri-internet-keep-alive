@@ -11,8 +11,10 @@ export const google = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`google: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("google: FAILURE");
+    return false;
   }
 };
 
@@ -27,8 +29,10 @@ export const amazon = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`amazon: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("amazon: FAILURE");
+    return false;
   }
 };
 
@@ -43,8 +47,10 @@ export const aliExpress = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`aliExpress: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("aliExpress: FAILURE");
+    return false;
   }
 };
 
@@ -59,8 +65,10 @@ export const youtube = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`youtube: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("youtube: FAILURE");
+    return false;
   }
 };
 
@@ -75,8 +83,10 @@ export const githubStatus = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`githubStatus: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("githubStatus: FAILURE");
+    return false;
   }
 };
 
@@ -91,8 +101,10 @@ export const giphy = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`giphy: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("giphy: FAILURE");
+    return false;
   }
 };
 
@@ -107,8 +119,10 @@ export const coinmarketcap = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`coinmarketcap: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("coinmarketcap: FAILURE");
+    return false;
   }
 };
 
@@ -123,8 +137,10 @@ export const downdetector = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`downdetector: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("downdetector: FAILURE");
+    return false;
   }
 };
 
@@ -139,8 +155,10 @@ export const shouldideploytoday = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`shouldideploytoday: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("shouldideploytoday: FAILURE");
+    return false;
   }
 };
 
@@ -155,8 +173,10 @@ export const theuselessweb = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`theuselessweb: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("theuselessweb: FAILURE");
+    return false;
   }
 };
 
@@ -171,8 +191,10 @@ export const papertoilet = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`papertoilet: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("papertoilet: FAILURE");
+    return false;
   }
 };
 
@@ -187,7 +209,9 @@ export const stackoverflow = async () => {
     const fetchTimeElapsed = Number(finishedFetchTime) - Number(startFetchingTime);
 
     console.log(`stackoverflow: OK - ${fetchTimeElapsed}ms`);
+    return true;
   } catch (error) {
     console.log("stackoverflow: FAILURE");
+    return false;
   }
 };
